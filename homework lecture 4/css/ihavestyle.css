@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+body
+{
+background-color : gray;
+font-family : Roboto;
+}
+p
+{
+color : #FF5733;
+font-family : 'Bauhaus 93', Roboto;
+}
+h1
+{
+color : #52BE80;
+font-family : Roboto, 'Bauhaus 93';
+}
+h3
+{
+color : #93AF00;
+font-family : 'Bauhaus 93', Roboto;
+}
+h4
+{
+color : #E0D1E1;
+font-family : Roboto, 'Bauhaus 93';
+}
+table
+{
+color : #48649B;
+font-family : 'Bauhaus 93', Roboto;
+}
+form
+{
+color : #CA3444;
+font-family : Roboto, 'Bauhaus 93';
+}
+
