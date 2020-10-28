@@ -1,0 +1,15 @@
+#solarLogo{
+    max-height:75px;
+    max-width:75px;
+    height:auto;
+    width:auto;
+}
+#navigationBar{
+    margin: 0;
+    padding: 0;
+	background-color: grey;
+}
+#navigationBarList li{
+	width:50%;
+    float: left;
+}
