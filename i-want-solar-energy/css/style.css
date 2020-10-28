@@ -1,15 +1,28 @@
 #solarLogo{
-    max-height:75px;
-    max-width:75px;
-    height:auto;
-    width:auto;
+max-height:75px;
+max-width:75px;
+height:auto;
+width:auto;
+background-color: #000000;
 }
-#navigationBar{
-    margin: 0;
-    padding: 0;
-	background-color: grey;
+#headerH1{
+	margin: 0;
+padding: 0;
+background-color: DarkGray;
 }
-#navigationBarList li{
-	width:50%;
-    float: left;
+#headerH2{
+	margin: 0;
+padding: 0;
+background-color: Gray;
+}
+#navBar{
+margin: 0;
+padding: 0;
+background-color: FloralWhite;
+}
+#navUl{
+list-style-type: none;
+margin: 0;
+padding: 0;	
+text-align: center;
 }
