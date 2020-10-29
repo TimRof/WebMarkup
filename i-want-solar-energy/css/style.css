@@ -39,7 +39,11 @@ float: right;
 padding: 10px;
 }
 #productCopyright{
-float: right;
+
+	position: sticky;
+		float: right;
+	top: 10;
+
 margin: 0px;
 padding: 0px;	
 }
