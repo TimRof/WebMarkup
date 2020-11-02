@@ -28,30 +28,42 @@ text-align: center;
 #navLi{
 display: inline-block;
 border: 1px solid blue;
-margin: 5px; 
+margin: 5px;
 padding: 10px;
 background-color: cyan;
 }
+.product{
+	float: right;
+}
 #productPhoto{
-max-height:250px;
-max-width:250px;
-float: right;
-padding: 10px;
+max-height:200px;
+max-width:200px;
 }
 #productCopyright{
+position: sticky;
 
-	position: sticky;
-		float: right;
-	top: 10;
-
+top: 10;
 margin: 0px;
-padding: 0px;	
+padding: 0px;
 }
 #indexArticle1{
 text-align: left;
 background-color: Orange;
 padding: 10px;
 }
-
-
-
+#indexArticle2{
+text-align: left;
+background-color: Green;
+padding: 10px;
+}
+#indexArticle3{
+text-align: left;
+background-color: Purple;
+padding: 10px;
+}
+.productArticles{
+	float: left;
+}
+.videoPlayer{
+	margin: auto;
+}
