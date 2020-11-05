@@ -1,73 +1,117 @@
-#solarLogo{
-max-height:90px;
-max-width:700px;
-height:auto;
-width:auto;
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
-#headerH1{
-margin: 0px;
-padding: 0px;
-background-color: DarkGray;
-}
-#headerH2{
-margin: 0px;
-padding: 0px;
-background-color: Gray;
-}
-#navBar{
-margin: 0px;
-padding: 0px;
-background-color: FloralWhite;
-}
-#navUl{
-list-style-type: none;
-margin: 0px;
-padding: 10px;
-text-align: center;
-}
-#navLi{
-display: inline-block;
-border: 1px solid blue;
-margin: 5px;
-padding: 10px;
-background-color: cyan;
-}
-.product{
-	float: right;
-}
-#productPhoto{
-max-height:200px;
-max-width:200px;
-}
-#productCopyright{
-position: sticky;
 
-top: 10;
-margin: 0px;
-padding: 0px;
+html {
+    font-family: 'Arial', 'Helvetica', sans-serif;
 }
-#indexArticle1{
-text-align: left;
-background-color: Orange;
-padding: 10px;
-}
-#indexArticle2{
-text-align: left;
-background-color: Green;
-padding: 10px;
-}
-#indexArticle3{
-text-align: left;
-background-color: Purple;
-padding: 10px;
-}
-.productArticles{
-	float: left;
-}
-#videoPlayer{
-    right: 0;
-    bottom: 0;
-    width: 100%;
+
+#solarLogo {
+    max-height: 90px;
+    max-width: 700px;
     height: auto;
-    z-index: -1;
+    width: auto;
+}
+
+#indexHeader {
+    text-align: center;
+    line-height: 15px;
+}
+
+#indexNav {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+}
+
+#indexNavUl {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+#indexNavLi {
+    display: inline-block;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+}
+
+#indexContent {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+#indexBody {}
+
+#indexVideo {
+    width: 100%;
+    max-width: 100%;
+}
+
+#indexVideoPlayer {
+    width: 100%;
+}
+
+.product {
+    float: right;
+}
+
+#productPhoto {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+#indexArticle1 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#indexArticle2 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#indexArticle3 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: ;
+}
+
+#cookieStatement {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #FFF;
+    background-color: #FA0;
+    opacity: 50%;
+    font-size: 40px;
+    z-index: 9999;
+}
+
+#indexAside {
+    padding: 20px;
+    white-space: nowrap;
+    flex-grow: 0;
+}
+
+#asideLi {
+    margin-bottom: 50px;
+}
+
+#indexArticles {}
+
+@media only screen and (max-width: 1279px) {}
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: aqua;
+
+    }
 }
