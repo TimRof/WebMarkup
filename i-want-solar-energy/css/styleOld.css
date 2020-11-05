@@ -1,0 +1,73 @@
+#solarLogo{
+max-height:90px;
+max-width:700px;
+height:auto;
+width:auto;
+}
+#headerH1{
+margin: 0px;
+padding: 0px;
+background-color: DarkGray;
+}
+#headerH2{
+margin: 0px;
+padding: 0px;
+background-color: Gray;
+}
+#navBar{
+margin: 0px;
+padding: 0px;
+background-color: FloralWhite;
+}
+#navUl{
+list-style-type: none;
+margin: 0px;
+padding: 10px;
+text-align: center;
+}
+#navLi{
+display: inline-block;
+border: 1px solid blue;
+margin: 5px;
+padding: 10px;
+background-color: cyan;
+}
+.product{
+	float: right;
+}
+#productPhoto{
+max-height:200px;
+max-width:200px;
+}
+#productCopyright{
+position: sticky;
+
+top: 10;
+margin: 0px;
+padding: 0px;
+}
+#indexArticle1{
+text-align: left;
+background-color: Orange;
+padding: 10px;
+}
+#indexArticle2{
+text-align: left;
+background-color: Green;
+padding: 10px;
+}
+#indexArticle3{
+text-align: left;
+background-color: Purple;
+padding: 10px;
+}
+.productArticles{
+	float: left;
+}
+#videoPlayer{
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
