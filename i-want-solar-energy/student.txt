@@ -1,0 +1,4 @@
+Student name: Tim Roffelsen
+Student number: 672395
+Student class: INF1B
+URL student GitHub repository: https://github.com/TimRof/WebMarkup
