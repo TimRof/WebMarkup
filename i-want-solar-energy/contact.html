@@ -1,32 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" href="img/solarfavicon.png" sizes="16x16" type="image/png">
-        <meta charset="utf-8" />
-        <meta name="keywords" content="solar, energy, green, power, electricity, good, environment" />
-        <meta name="description" content="Online webshop selling solar panels for solar energy" />
-        <meta name="author" content="Tim Roffelsen" />
-        <title>I Want Solar Energy</title>
-    </head>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="icon" href="img/solarfavicon.png" sizes="16x16" type="image/png">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="solar, energy, green, power, electricity, good, environment" />
+    <meta name="description" content="Online webshop selling solar panels for solar energy" />
+    <meta name="author" content="Tim Roffelsen" />
+    <title>I Want Solar Energy</title>
+</head>
+
+<body>
     <header id='indexHeader'>
         <a href="index.html">
-            <img id="solarLogo" src="img/SolarLogo.svg" title="I Want Solar Energy logo" alt="I Want Solar Energy logo" type="image/svg"></a>
+            <img id="solarLogo" src="img/SolarLogo.svg" title="I Want Solar Energy logo" alt="I Want Solar Energy logo"></a>
         <h1>InHolland Solar</h1>
         <h2>Save the future!</h2>
     </header>
-    <nav id="indexNav">
-        <ul id="indexNavUl">
-            <li id="indexNavLi">
+    <nav class="nav">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li>
                 <a href="howsolarworks.html">How does it work?</a>
             </li>
-            <li id="indexNavLi">
+            <li>
                 <a href="eusolar.html">Solar in the EU</a>
             </li>
-            <li id="indexNavLi">
+            <li>
                 <a href="contact.html">Contact</a>
             </li>
         </ul>
     </nav>
 
-    <body></body></html>
+    <section class="contactForm">
+        <section class=contactInfo>
+            <p>Contact us if you have any questions!</p>
+        </section>
+        <section class="solarContact">
+            <form id="contact" action="https://i-want-solar-energy.com/testform.php" method="post">
+                <fieldset>
+                    <legend>Contact us!</legend>
+                    <ul>
+                        <li>
+                            <label for="name">
+                                Visitor Name:*
+                            </label>
+                            <input type="text" name="name" placeholder="Enter your name" />
+                        </li>
+                        <li>
+                            <label for="email">
+                                Visitor Email:*
+                            </label>
+                            <input type="email" name="email" placeholder="Enter your email" />
+                        </li>
+                        <li>
+                            <label for="website">
+                                Your website</label>
+                            <input type="text" name="website" placeholder="http://" />
+                        </li>
+                        <li>
+                            <label for="message">
+                                Message</label>
+                            <textarea name="message" placeholder="Your message here.."></textarea>
+                        </li>
+                        <li>
+                            <button type="submit">
+                                Submit
+                            </button>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </section>
+        <aside class="contactAside-1"><a href="http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V"><img class="productPhoto" src="img/product1.png" title="SmartSolar MPPT" alt="SmartSolar MPPT"></a>
+            <footer class="productCaption" class="productCopyright">&copy; Victron Energy</footer>
+        </aside>
+        <aside class="contactAside-2"><a href="http://www.ikwilzonneenergie.nl/Victron-Energy-Multiplus-12V/3000W/120-16"><img class="productPhoto" src="img/product2.png" title="Victron MultiPlus" alt="Victron MultiPlus"></a>
+            <footer class="productCaption" class="productCopyright">&copy; Victron Energy</footer>
+        </aside>
+        <aside class="contactAside-3"><a href="http://www.ikwilzonneenergie.nl/SMA-Omvormer-STP-80-3AV-40"><img class="productPhoto" src="img/product3.png" title="SMA STP 8.0-3AV-40 omvormer" alt="SMA STP 8.0-3AV-40 omvormer"></a>
+            <footer class="productCaption" class="productCopyright">&copy; Victron Energy</footer>
+        </aside>
+    </section>
+</body>
+<footer id='indexFooter'>
+    <p>&copy; Copyright Tim Roffelsen 2020</p>
+    <section id="cookies">
+        <p id='cookieStatement'>Cookie Statement</p>
+    </section>
+</footer></html>
