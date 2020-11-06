@@ -49,14 +49,17 @@ body {
 .menu li {
     display: inline-block;
     border: 1px solid;
-    border-color:aliceblue;
+    border-color: aliceblue;
     border-width: thick;
     margin: 5px;
     padding: 10px;
 }
-aside, li{
-    color:#FFFFFF ;
+
+aside,
+li {
+    color: #FFFFFF;
 }
+
 #indexContent {
     display: flex;
     flex: 1;
@@ -256,7 +259,7 @@ h1 + h2 {
     background-color: midnightblue;
 }
 
-
+.contactForm {}
 
 .solarContact {
     grid-area: 2 / 1 / 8 / 3;
@@ -295,9 +298,6 @@ td:first-child {
     background-color: #FF0;
 }
 
-td:last-child {
-    background-color: #FFF;
-}
 /* tablet */
 @media only screen and (max-width: 1280px) {
     body {
@@ -386,18 +386,25 @@ td:last-child {
         display: none;
     }
 
+    .tableCopy {
+        margin: 0;
+        padding: 0;
+    }
+
     .tableContents {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
         grid-template-areas:
             "tableArticle tableArticle"
             "tableSolar tableSolar"
             "tableSolar tableSolar"
             "tableSolar tableSolar"
             "tableSolar tableSolar"
+            "tableCopy tableCopy"
             "tableAside-1 tableAside-2"
-            "tableAside-1 tableAside-2";
+            "tableAside-1 tableAside-2"
+        ;
     }
 
     .tableArticle {
@@ -414,6 +421,11 @@ td:last-child {
 
     .tableSolar {
         grid-area: tableSolar;
+        overflow: hidden;
+    }
+    .tableCopy{
+        z-index: 9999;
+        grid-area: tableCopy;
     }
 
     .tableSolar tr > *:nth-child(3) {
@@ -432,6 +444,7 @@ td:last-child {
         display: none;
     }
 }
+
 /* desktop */
 @media only screen and (min-width: 1280px) {
     .contactForm {
@@ -467,12 +480,16 @@ td:last-child {
             "tableSolar tableSolar tableAside-1"
             "tableSolar tableSolar tableAside-2"
             "tableSolar tableSolar tableAside-2"
-            "tableSolar tableSolar tableAside-3"
+            "tableCopy tableCopy tableAside-3"
             "tableFooter tableFooter tableAside-3";
     }
 
     .tableArticle {
         grid-area: tableArticle;
+    }
+
+    .tableCopy {
+        grid-area: tableCopy;
     }
 
     .tableAside-1 {
@@ -495,6 +512,7 @@ td:last-child {
         grid-area: tableFooter;
     }
 }
+
 /* mobile */
 @media only screen and (max-width: 480px) {
     html {
@@ -606,15 +624,35 @@ td:last-child {
 
     .contactForm {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "contactInfo"
             "solarContact"
             "solarContact"
             "solarContact"
-            "ContactAside-1"
+            "contactAside-1"
             "contactAside-2"
             "contactAside-3";
+    }
+
+    .contactInfo {
+        grid-area: contactInfo;
+    }
+
+    .solarContact {
+        grid-area: solarContact;
+    }
+
+    .contactAside-1 {
+        grid-area: contactAside-1;
+    }
+
+    .contactAside-2 {
+        grid-area: contactAside-2;
+    }
+
+    .contactAside-3 {
+        grid-area: contactAside-3;
     }
 
     .tableArticle {
@@ -629,4 +667,49 @@ td:last-child {
         display: none;
     }
 
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "tableSolar"
+            "tableSolar"
+            "tableSolar"
+            "tableSolar"
+            "tableSolar"
+            "tableCopy"
+            "tableAside-1"
+            "tableAside-2"
+            "tableAside-3";
+    }
+
+    .tableCopy {
+        margin: 0;
+        padding: 0;
+        z-index: 999;
+        clear: both;
+    }
+
+    .tableSolar {
+        grid-area: tableSolar;
+    }
+
+    .tableCopy {
+        grid-area: tableCopy;
+    }
+
+    .tableAside-1 {
+        grid-area: tableAside-1;
+        padding: 20px;
+    }
+
+    .tableAside-2 {
+        grid-area: tableAside-2;
+        padding: 20px;
+    }
+
+    .tableAside-3 {
+        grid-area: tableAside-3;
+        padding: 20px;
+    }
 }
