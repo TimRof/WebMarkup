@@ -1,0 +1,522 @@
+html,
+body {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+html {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+#solarLogo {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+#indexHeader {
+    text-align: center;
+    line-height: 15px;
+}
+
+.nav {
+    background-color: darkcyan;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+}
+
+.nav ul a:hover {
+    background-color: azure;
+}
+
+.nav .menu-btn {
+    display: none;
+}
+
+
+.menu {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+}
+
+#indexContent {
+    display: flex;
+    flex: 1;
+
+}
+
+#indexBody {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#indexVideo {
+    display: flex;
+}
+
+#indexVideoPlayer {
+    width: auto;
+    display: flex;
+}
+
+.product {
+    float: right;
+}
+
+.productPhoto {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+#indexArticle1 {
+    background-color: azure;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#indexArticle2 {
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#indexArticle3 {
+    background-color: cadetblue;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+#indexFooter {
+    background-color: #F23;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    float: left;
+}
+
+#cookieStatement {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #FFF;
+    background-color: #FA0;
+    opacity: 50%;
+    font-size: 40px;
+    z-index: 9999;
+}
+
+#indexAside {
+    background-color: deeppink;
+    float: right;
+    flex-direction: column;
+    padding: 20px;
+    white-space: nowrap;
+    flex-grow: 0;
+}
+
+#asideLi {
+    margin-bottom: 50px;
+}
+
+.nav .menu-icon {
+}
+.tableArticle{
+    background-color: mintcream;
+}
+.tableAside-1{
+    background-color: salmon;
+}
+.tableAside-2{
+    background-color: dimgray;
+}
+.tableAside-3{
+    background-color: darkgoldenrod;
+}
+.tableFooter{
+    background-color: lavenderblush;
+}
+.solarArticles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "solarArticle-2 solarArticle-1 solarArticle-3"
+        "solarArticle-2 solarArticle-1 solarArticle-3"
+        "solarArticle-5 solarArticle-1 solarArticle-3"
+        "solarArticle-5 solarArticle-1 solarArticle-4"
+        "solarArticle-5 solarArticle-1 solarArticle-4"
+        "solarArticle-5 solarArticle-1 solarArticle-4"
+        "solarArticle-5 solarArticle-6 solarArticle-6"
+        "solarAside-1 solarAside-2 solarAside-3"
+        "solarAside-1 solarAside-2 solarAside-3";
+}
+
+.solarArticle-2 {
+    grid-area: solarArticle-2;
+    background-color: papayawhip;
+}
+
+.solarArticle-3 {
+    grid-area: solarArticle-3;
+    background-color: gray;
+}
+
+.solarArticle-4 {
+    grid-area: solarArticle-4;
+    background-color: saddlebrown;
+}
+
+.solarArticle-1 {
+    grid-area: solarArticle-1;
+    background-color: lightcoral;
+}
+
+.solarArticle-5 {
+    grid-area: solarArticle-5;
+    background-color: rebeccapurple;
+}
+
+.solarArticle-6 {
+    grid-area: solarArticle-6;
+    background-color: cornflowerblue;
+}
+
+.solarAside-1 {
+    grid-area: solarAside-1;
+    background-color: orangered;
+}
+
+.solarAside-2 {
+    grid-area: solarAside-2;
+    background-color: bisque;
+}
+
+.solarAside-3 {
+    grid-area: solarAside-3;
+    background-color: midnightblue;
+}
+
+
+
+.solarContact {
+    grid-area: 2 / 1 / 8 / 3;
+    background-color: aquamarine;
+}
+
+.contactInfo {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: red;
+}
+
+.contactAside-1 {
+    grid-area: 2 / 3 / 4 / 4;
+    background-color: navajowhite;
+}
+
+.contactAside-2 {
+    grid-area: 4 / 3 / 6 / 4;
+    background-color: saddlebrown;
+}
+
+.contactAside-3 {
+    grid-area: 6 / 3 / 8 / 4;
+    background-color: goldenrod;
+}
+
+tr:nth-child(even) {
+    background-color: #CCF;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+@media only screen and (max-width: 1280px) {
+    body {
+        background-color: blue;
+    }
+
+    .nav .menu-icon .nav-icon {
+        display: none;
+    }
+
+
+    #indexVideo {
+        order: 1;
+    }
+
+    #indexVideoPlayer {
+        height: 100%;
+        width: 100%;
+    }
+
+    #indexBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #indexContent {
+        order: 2;
+    }
+
+    #indexAside {
+        width: 100%;
+        padding: 3px;
+        order: -1;
+    }
+
+    .solarArticles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "solarArticle-1 solarArticle-2"
+            "solarArticle-1 solarArticle-2"
+            "solarArticle-3 solarArticle-2"
+            "solarArticle-3 solarArticle-5"
+            "solarArticle-3 solarArticle-5"
+            "solarArticle-3 solarArticle-5"
+            "solarArticle-6 solarArticle-6"
+            "solarArticle-6 solarArticle-6"
+            "solarAside-1 solarAside-2"
+            "solarAside-1 solarAside-2";
+    }
+
+    .solarAside-3 {
+        display: none;
+    }
+
+    .solarArticle-4 {
+        display: none;
+    }
+
+    .contactForm {
+        display: grid;
+    }
+
+    .contactInfo {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .solarContact {
+        grid-area: 2 / 1 / 8 / 2;
+    }
+
+    .contactAside-1 {
+        grid-area: 2 / 2 / 4 / 3;
+    }
+
+    .contactAside-2 {
+        grid-area: 4 / 2 / 6 / 3;
+    }
+
+    .contactAside-3 {
+        grid-area: 6 / 2 / 8 / 3;
+    }
+    .tableAside-3{
+        display:none;
+    }
+    .tableContents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "tableArticle tableArticle"
+    "tableSolar tableSolar"
+    "tableSolar tableSolar"
+    "tableSolar tableSolar"
+    "tableSolar tableSolar"
+    "tableAside-1 tableAside-2"
+    "tableAside-1 tableAside-2";
+}
+.tableArticle { grid-area: tableArticle; }
+.tableAside-1 { grid-area: tableAside-1; }
+.tableAside-2 { grid-area: tableAside-2; }
+.tableSolar { grid-area: tableSolar; }
+}
+
+@media only screen and (min-width: 1280px) {
+    .contactForm {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #solarLogo {
+        max-width: 700px;
+    }
+
+    body {
+        background-color: green;
+    }
+
+    #indexVideoPlayer {
+        width: 1920px;
+    }
+
+    .nav .menu-icon .nav-icon {
+        display: none;
+    }
+
+
+    .tableContents {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "tableArticle tableArticle tableArticle"
+            "tableSolar tableSolar tableAside-1"
+            "tableSolar tableSolar tableAside-1"
+            "tableSolar tableSolar tableAside-2"
+            "tableSolar tableSolar tableAside-2"
+            "tableSolar tableSolar tableAside-3"
+            "tableFooter tableFooter tableAside-3";
+    }
+    .tableArticle { grid-area: tableArticle; }
+.tableAside-1 { grid-area: tableAside-1; }
+.tableAside-2 { grid-area: tableAside-2; }
+.tableAside-3 { grid-area: tableAside-3; }
+.tableSolar { grid-area: tableSolar; }
+.tableFooter { grid-area: tableFooter; }
+}
+@media only screen and (max-width: 480px) {
+    html {
+        max-width: 480px;
+    }
+
+    body {
+        background-color: red;
+    }
+
+    #indexAside {
+        order: -2;
+    }
+
+    .nav .menu-icon .nav-icon {
+        display: block;
+    }
+
+    .nav {
+        background-color: white;
+        width: 100%
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav .menu-btn:checked ~ .menu {
+        display: inline;
+    }
+
+    .nav .menu-icon {
+        padding: 28px 20px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+    }
+
+    .nav .menu-icon .nav-icon {
+        background: gray;
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+    }
+
+    .nav .menu-icon .nav-icon:before {
+        background: gray;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 5px;
+    }
+
+    .nav .menu-icon .nav-icon:after {
+        background: gray;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -5px;
+    }
+
+    #indexVideo {
+        display: none;
+    }
+
+    #indexContent {
+        order: 0;
+    }
+
+    .solarArticles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "solarArticle-5 solarArticle-5"
+            "solarArticle-5 solarArticle-5"
+            "solarArticle-5 solarArticle-5"
+            "solarArticle-3 solarArticle-3"
+            "solarArticle-3 solarArticle-3"
+            "solarArticle-3 solarArticle-3"
+            "solarArticle-2 solarArticle-2"
+            "solarArticle-2 solarArticle-2"
+            "solarArticle-2 solarArticle-2"
+            "solarArticle-1 solarArticle-1"
+            "solarArticle-1 solarArticle-1"
+            "solarArticle-1 solarArticle-1"
+            "solarAside-1 solarAside-1"
+            "solarAside-2 solarAside-2"
+            "solarAside-3 solarAside-3"
+    }
+
+    .solarArticle-6 {
+        display: none;
+    }
+
+    .solarArticle-4 {
+        display: none;
+    }
+
+    #indexHeader {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .contactForm {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "contactInfo"
+            "solarContact"
+            "solarContact"
+            "solarContact"
+            "ContactAside-1"
+            "contactAside-2"
+            "contactAside-3";
+    }
+    .tableArticle{
+        display:none;
+    }
+
+}
