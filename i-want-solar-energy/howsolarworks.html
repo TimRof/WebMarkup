@@ -2,35 +2,78 @@
 <html lang="en">
 
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" href="img/solarfavicon.png" sizes="16x16" type="image/png">
-        <meta charset="utf-8" />
-        <meta name="keywords" content="solar, energy, green, power, electricity, good, environment" />
-        <meta name="description" content="Online webshop selling solar panels for solar energy" />
-        <meta name="author" content="Tim Roffelsen" />
-        <title>I Want Solar Energy</title>
-    </head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="icon" href="img/solarfavicon.png" sizes="16x16" type="image/png">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="solar, energy, green, power, electricity, good, environment" />
+    <meta name="description" content="Online webshop selling solar panels for solar energy" />
+    <meta name="author" content="Tim Roffelsen" />
+    <title>I Want Solar Energy</title>
+</head>
+
+<body>
     <header id='indexHeader'>
         <a href="index.html">
-            <img id="solarLogo" src="img/SolarLogo.svg" title="I Want Solar Energy logo" alt="I Want Solar Energy logo" type="image/svg"></a>
+            <img id="solarLogo" src="img/SolarLogo.svg" title="I Want Solar Energy logo" alt="I Want Solar Energy logo"></a>
         <h1>InHolland Solar</h1>
         <h2>Save the future!</h2>
     </header>
-    <nav id="indexNav">
-        <ul id="indexNavUl">
-            <li id="indexNavLi">
+    <nav class="nav">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li>
                 <a href="howsolarworks.html">How does it work?</a>
             </li>
-            <li id="indexNavLi">
+            <li>
                 <a href="eusolar.html">Solar in the EU</a>
             </li>
-            <li id="indexNavLi">
+            <li>
                 <a href="contact.html">Contact</a>
             </li>
         </ul>
     </nav>
 
-    <body>
-    </body>
-
-</html>
+    <section class="solarArticles">
+        <article class="solarArticle-1">
+            <h2>Why do Solar Panels work?</h2>
+            <p>Solar panels make use of something called photovaltaic &#40;PV&#41; cells &#40;photo meaning &#34;light&#34; and voltaic meaning &#34;electricity&#34;&#41;, they convert sunlight directly into electricity. The solar panel is a group of these cells connected electrically and packaged into a frame &#40;the solar panel&#41;. These PV cells are made of special materials called semiconductors, silicon is currently used most commonly. When light strikes the cell, a certain portion of it&#39;s energy is transferred to the semiconductor.</p>
+        </article>
+        <article class="solarArticle-2">
+            <h2>What is a Solar Charge Controller?</h2>
+            <p>A charge controller or charge regulator is basically a voltage and/or current regulator to keep batteries from overcharging. It regulates the voltage and current coming from the solar panels going to the battery. This system also prevents energy running backwards into the solar panel, draining the batteries. A charge controller is designed to be connected at all times and won't discharge or damage your batteries, instead lengthening the lifespan of your battery.</p>
+        </article>
+        <article class="solarArticle-3">
+            <h2>What is a Battery System</h2>
+            <p>Battery energy storage systems are rechargeable battery systems that store energy from solar arrays or the electric grid and provide that energy to a home or business. Because they contain advanced technology that regular batteries do not, they can easily perform certain tasks that used to be difficult or impossible, such as peak shaving and load shifting. These batteries are charged up during the day by clean electricity by your solar panels. The intelligent battery software optimise how and when the energy is used. This energy is then discharged during times of high usage, reducing or even completely eliminating your normal electricity costs.</p>
+        </article>
+        <article class="solarArticle-4">
+            <h2>What is DC power?</h2>
+            <p>DC power, meaning Direct Current, is a one&#45; or uni&#45;directional flow of electric charge. This electrical energy may flow through a conductor, such as a wire, and can after converstion, supply your appliances with electricity. Solar panels use the photons produced by sunlight to generate direct current &#40;DC&#41; electricity. When the photons hit the panel they are absorbed by the panel's semiconducting silicon material and create energy. During this process electrons separate from the atoms and move around the solar cell. This movement of the electrons is what generates Direct Current &#40;DC&#41; electricity.</p>
+        </article>
+        <article class="solarArticle-5">
+            <h2>What is a Solar Inverter</h2>
+            <p>A solar inverter or PV inverter, is a sort of electric converter which converts the variable direct cutting-edge output of a photovoltaic solar panel right into a application frequency alternating cutting-edge that may be fed right into a industrial electric grid or utilized by a local, off-grid electric network. The main purpose of the solar inverter is to translate or &#34;invert&#34; the solar energy—generated by your solar panels &#45;from DC to AC so that your home and utility grid can use it.</p>
+        </article>
+        <article class="solarArticle-6">
+            <h2>What is AC power?</h2>
+            <p>AC power, meaning Alternating Current, is a type of electrical current, in which the direction of the flow of electrons switches back and forth at regular intervals or cycles. Current flowing in power lines and normal household electricity that comes from a wall outlet is alternating current. One advantage of alternating current is that it is relatively cheap to change the voltage of the current. Furthermore, the inevitable loss of energy that occurs when current is carried over long distances is far smaller with alternating current than with direct current.</p>
+        </article>
+        <section class="productPhoto"></section>
+        <aside class="solarAside-1"><a href="http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V"><img class="productPhoto" src="img/product1.png" title="SmartSolar MPPT" alt="SmartSolar MPPT"></a>
+            <footer class="productCaption" class="productCopyright">&copy; Victron Energy</footer>
+        </aside>
+        <aside class="solarAside-2"><a href="http://www.ikwilzonneenergie.nl/Victron-Energy-Multiplus-12V/3000W/120-16"><img class="productPhoto" src="img/product2.png" title="Victron MultiPlus" alt="Victron MultiPlus"></a>
+            <footer class="productCaption" class="productCopyright">&copy; Victron Energy</footer>
+        </aside>
+        <aside class="solarAside-3"><a href="http://www.ikwilzonneenergie.nl/SMA-Omvormer-STP-80-3AV-40"><img class="productPhoto" src="img/product3.png" title="SMA STP 8.0-3AV-40 omvormer" alt="SMA STP 8.0-3AV-40 omvormer"></a>
+            <footer class="productCaption" class="productCopyright">&copy; Victron Energy</footer>
+        </aside>
+    </section>
+</body>
+<footer id='indexFooter'>
+    <p>&copy; Copyright Tim Roffelsen 2020</p>
+    <section id="cookies">
+        <p id='cookieStatement'>Cookie Statement</p>
+    </section>
+</footer></html>
